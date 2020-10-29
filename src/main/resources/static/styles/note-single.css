@@ -1,0 +1,21 @@
+main{
+    margin-top: 2rem;
+}
+main form{
+    display: flex;
+    flex-direction: column;
+}
+main form > * {
+    margin-bottom: 1rem;
+}
+main button{
+    margin-top: 4rem;
+}
+main input, main trix-editor {
+    outline: none;
+    border-radius: 0.5rem;
+    border:1px solid gray;
+}
+main trix-editor {
+    min-height: 10rem;
+}

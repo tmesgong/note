@@ -1,0 +1,82 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    width: 90%;
+    background-color: #fff;
+    color: #333;
+    font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    letter-spacing: 8px;
+    margin: 0;
+}
+h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0;
+}
+p {
+    margin: 0.5rem 0;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+time {
+    color: grey;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav > * {
+    flex: 250px;
+    font-size: 2rem;
+    line-height: 2;
+    text-align: center;
+    border-radius: 16px;
+    border: 1px solid gray;
+}
+nav a {
+    outline: none;
+    text-decoration: none;
+    color: black;
+    transition: background-color .5s;
+    border-radius: 1rem;
+
+}
+
+nav a:focus, nav a:hover{
+    color: red;
+    background-color: gold;
+    text-decoration: underline;
+}
+nav a:active{
+    color: white;
+}
+nav input {
+    border-radius: 16px;
+    display: block;
+    outline: none;
+    height: 100%;
+    width: 100%;
+}
+nav input:focus{
+    background-color: antiquewhite;
+
+}
+nav label {
+    display: none;
+}
+.trix-button-group--file-tools{
+    display: none !important;
+}

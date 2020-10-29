@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://libs.cdnjs.net/trix/1.2.1/trix.css" rel="stylesheet">
+    <script src="https://libs.cdnjs.net/trix/1.2.1/trix.js"></script>
+    <script src="https://kit.fontawesome.com/7725e4a6bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/note-single.css">
+    <script src="scripts/form-submit.js" defer></script>
+    <script src="scripts/search-notes.js" defer></script>
+
+</head>
+<body>
+<header>
+    <h1>网页笔记</h1>
+</header>
+<nav>
+    <a href="index.html">首页</a>
+    <a href="#">添加笔记</a>
+    <form id="search">
+        <label for="q">搜索</label>
+        <input id="q" type="search" name="q" placeholder="搜索" pattern="(.|\s)*\S(.|\s)*" required>
+    </form>
+</nav>
+<main>
+    <form>
+        <label for="title">标题：</label>
+        <input id="title" type="text" name="title" pattern="(.|\s)*\S(.|\s)*" required>
+        <label for="content">内容：</label>
+        <input id="content" type="hidden" pattern="(.|\s)*\S(.|\s)*" name="content" required>
+        <trix-editor  class="trix-content" input="content"></trix-editor>
+        <button>提交</button>
+    </form>
+</main>
+</body>
+</html>

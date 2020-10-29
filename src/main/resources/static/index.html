@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://kit.fontawesome.com/7725e4a6bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/card.css">
+    <script src="scripts/search-notes.js" defer></script>
+    <script src="scripts/fetch-notes.js" defer></script>
+
+
+</head>
+<body>
+<header>
+    <h1>网页笔记</h1>
+</header>
+<nav>
+    <a href="#">首页</a>
+    <a href="add.html">添加笔记</a>
+    <form id="search">
+        <label for="q">搜索</label>
+        <input id="q" type="search" name="q" placeholder="搜索" pattern="(.|\s)*\S(.|\s)*" required>
+    </form>
+</nav>
+<main class="trix-content">
+</main>
+</body>
+</html>
